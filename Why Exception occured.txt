@@ -1,0 +1,79 @@
+IOException :
+         Signals that an I/O exception of some sort has occurred. 
+         This class is the general class of  exceptions produced by
+          failed or interrupted I/O operations.
+		  
+		  => import java.io.IOException
+		  
+SQLException :
+              SQLException occurs if there is an error in the database access or
+ other errors related to the database. 
+ 
+		=>import java.sql.SQLException
+ 
+ 
+CLassNotFOund Exception :
+                ClassNotFoundException is a checked exception in Java that occurs when the 
+                JVM tries to load a particular class  but does not find it in the classpath
+                        (OR)
+               This Exception is raised when we try to access a class whose definition is not found.
+
+				=> no need to Import , inside java.lang.ClassNotFoundException 
+				
+				//  no need to import any runtime exectpions ,because they are in lang package
+
+Arithmetic exception : 
+              It is thrown when an exceptional condition has occurred in an arithmetic operation.
+			  
+				=> no need to Import , inside java.lang.ArithmeticException
+				
+NullPointerException : 
+              This exception is raised when referring to the members of a null object.
+              Null represents nothing
+			  
+			  => no need to Import , inside java.lang.NullPointerException
+			  
+			  
+NumberFormatException : 
+                     This exception is raised when a method could not convert a 
+                         string into a numeric format.
+						 
+			 => no need to Import , inside java.lang.NumberFormatException 
+			 
+ArrayIndexOutOfBounds Exception : 
+                  It is thrown to indicate that an array has been accessed with an illegal index. 
+                  The index is either negative or greater than or equal to the size of the array.
+				  
+			=> no need to Import , inside java.lang.ArrayIndexOutOfBoundsException
+
+StringIndexOutOfBoundsException : 
+                  It is thrown by String class methods to 
+                  indicate that an index is either negative than the size of the string.
+				  
+			=> no need to Import , inside java.lang.StringIndexOutOfBoundsException
+			
+			
+			
+			//  no need to import these errors ,becoz  virtual machine error is  in lang package
+			// InternalError, OutOfMemoryError, StackOverflowError, UnknownError
+			//these errors are subclasses of Virtual Machine Error
+
+Stack Over FLow Error : 
+                     A StackOverflowError is a runtime error in Java. 
+                     It is thrown when the amount of call stack memory allocated by the JVM 
+                     is exceeded.  A common case of a StackOverflowError being thrown, 
+                     is when the call stack exceeds due to excessive deep or infinite recursion.
+					 
+Virtual Machine Error  :
+           VirtualMachineError is thrown when the Java virtual machine encounters an 
+           internal error or resource limitation, which prevents it from functioning. 
+
+          It's a self-defensive mechanism employed by JVM to 
+          prevent the entire application from crashing.
+		  
+Out of Memory Error :
+             OutOfMemoryError is a runtime error in Java which occurs when the Java Virtual Machine 
+             (JVM) is unable to allocate an object due to insufficient space in the Java heap. 
+
+             This error can also be thrown  when the native memory is insufficient 
+             to support the loading of a Java class.
