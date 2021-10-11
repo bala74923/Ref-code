@@ -9,7 +9,7 @@
   1) level order                                 = 115
   2) reverse level order                         =  93 
   3) deepest node in binary tree                 = 131
-  4)  Find minimum node                          = 148
+  4) Find minimum node                           = 148
   5) delete a Node in treee                      = 155 
   6) no of leaf nodes in tree without recursion  = 206
   7) no of half nodes in tree without recursion  = 222 
