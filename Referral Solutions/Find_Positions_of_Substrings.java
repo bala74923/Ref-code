@@ -9,8 +9,8 @@ public class Main {
 		String s = sc.next();
 		String first_subString = sc.next();
 		int substring_length = first_subString.length();
-		int total_no_of subs = s.length()/substring_length;
-	    Map<String,Integer> result = getresult(s,substring_length,total_no_of subs);
+		int total_no_of_subs = s.length()/substring_length;
+	    Map<String,Integer> result = getresult(s,substring_length,total_no_of_subs);
 	    System.out.println(result.get(first_subString));
 	    while(sc.hasNext())
 	    {
