@@ -1,3 +1,10 @@
-git remote add origin https://github.com/bala74923/books.git
+// ONLY FOR COLLABRATORS
+
+
+// To push to the Repo use this Command Below
 git branch -M main
 git push -u origin main
+
+
+// To pull this Repo use the command below
+git pull https://github.com/bala74923/Ref-code.git
