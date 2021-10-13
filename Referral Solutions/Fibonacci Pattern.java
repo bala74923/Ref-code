@@ -22,13 +22,9 @@ public class Hello {
 		//Your Code Here
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		String[] arr=new String[2*n-1];
+		String[] arr=new String[n];
 		arr[0]="0"; arr[1]="1";
-		for(int i=2;i<2*n-1;++i)
-		{
-		    if(i<n) arr[i]=arr[i-2]+arr[i-1];
-		    else arr[i]=arr[n-(i+1-n)-1];
-	    }
-	    for(String i:arr) System.out.println(i);
+		for(int i=2;i<n;++i) arr[i]=arr[i-2]+arr[i-1];
+	        for(int i=0;i<2*n-1;i++) System.out.println(i<n?arr[i]:arr[n-(i%n)-2]);
 	}
 }
