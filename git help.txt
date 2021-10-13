@@ -2,6 +2,8 @@
 
 
 // To push to the Repo use this Command Below
+git add .
+git commit -m "Type your message about your changes or Updataion"
 git branch -M main
 git push -u origin main
 
