@@ -12,5 +12,5 @@ git pull https://github.com/bala74923/Ref-code.git
 
 
 
-// to add origin 
+// to add origin to repo
 git remote add origin https://github.com/bala74923/Ref-code.git
