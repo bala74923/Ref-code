@@ -1,0 +1,412 @@
+:root{
+    --primary-link-color: rgba(223, 19, 19, 0.671);
+    --primary-btn-color: rgba(245, 1, 1, 0.849);
+    --boarder-lines: rgb(36, 26, 26);
+    --max-width: 900px;
+    --transition: 0.3s ease-in-out all;
+    --hover-color: grey;
+    --footer-color: black;
+    --red-100: rgba(221, 76, 76, 0.884);
+    --border-radius: 10px;
+    --name-color: rgb(83, 42, 42);
+    --para-color: rgba(228, 40, 112, 0.911);
+      /* fonts  */
+  --headingFont: 'Roboto', sans-serif;
+  --bodyFont: 'Nunito', sans-serif;
+  --smallText: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+--black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+a{
+    cursor:  pointer;
+    color: var(--primary-link-color);
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    /* display: flex; */
+}
+/* body{
+    margin: 6rem;
+} */
+.btn{
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    padding: 10px;
+    font-style: normal;
+    display: inline-block; 
+    text-align: center;
+    text-decoration: none;
+}
+.btn:hover{
+    
+    color: var(--primary-btn-color);
+    background-color:white;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-header img{
+    height: 125px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-center{
+    width: 90vw;
+    max-width: var(--max-width);
+}
+.nav-header{
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-btn i{
+    display: inline-flex;
+}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.show-links{
+    height: 524px;
+}
+.nav-link{
+    display: block;
+    text-align: center;
+    padding: 1rem 0rem;
+    color: var(--primary-link-color);
+    text-decoration: none;
+    border-top: 1px solid var(--boarder-lines);
+    transition: var(--transition);
+}
+.nav-link:hover{
+    color: var(--hover-color);
+}
+@media screen and (min-width: 650px){
+    .nav-btn{
+        display: none;
+    }
+    .navbar{
+        height: 6rem;
+    }
+    .nav-center{
+        display: flex;
+        align-items: center;
+    }
+    .nav-header{
+        height: auto;
+        margin-right: 2rem;
+    }
+    .nav-links{
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-link{
+        padding: 0;
+        border-top: none;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    .contact-link{
+        margin-left: auto;
+    }
+}
+/* 
+======================
+Page
+======================
+*/
+
+.page{
+    width: 90vw;
+    margin: 20px auto;
+    padding: 2rem;
+    max-width: var(--max-width);
+    min-height: calc(100vh - (6rem+4rem));
+}
+/* 
+=====================
+Footer
+=====================
+*/
+.page-footer{
+    height: 4rem;
+    text-align: center;
+    background-color: var(--footer-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo{
+    color: var(--red-100);
+}
+/* 
+=====================
+Hero
+=====================
+*/
+.hero{
+    height: 40vh;
+    background: url('../assets/Banner.jpg') center/cover no-repeat;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    position: relative;
+}
+.hero-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text{
+    text-align: center;
+    color: white;
+}
+@media screen and (min-width: 768px) {
+    .hero-text h1{
+        font-size: 4rem;
+        
+    }
+}
+
+/* 
+=====================
+Donors
+=====================
+*/
+.donors-container{
+    display: grid;
+    gap: 2rem 1rem;
+}
+
+.tags-container{
+    order: 1;
+    display:  flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+.donors-list{
+    display: grid;
+    gap: 2rem 0.5rem;
+    padding-bottom: 3rem;
+}
+
+.tags-container h4{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.tags-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.tags-list a{
+    text-transform: capitalize;
+    display: block;
+    color: var(--primary-link-color);
+    transition: var(--transition);
+}
+.tags-list a:hover{
+    color: var(--hover-color);
+}
+
+.donor-img{
+    height: 15rem;
+    width: fit-content;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+.donor h5{
+    margin-bottom: 0;
+    line-height: 1;
+    color: var(--name-color);
+}
+.donor p{
+    margin-bottom: 0;
+    line-height: 1;
+    margin-top: 0.5rem;
+    color: var(--para-color);
+}
+
+@media screen and (min-width : 576px) {
+    .donors-list{
+        grid-template-columns: 1fr 1fr;
+    }
+    .donor-img{
+        height: 10rem;
+    }
+}
+@media screen and (min-width : 992px) {
+    .donors-container{
+        grid-template-columns: 200px 1fr;
+    }
+    .donor p{
+        font-size: 0.85rem;
+    }
+    .tags-container{
+        order: 0;
+    }
+    .tags-list{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width : 1200px) {
+    .donor h5{
+        font-size: 1.15rem;
+    }
+    .donors-list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* 
+=====================
+Error
+=====================
+*/
+.error-page{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.error-page h1{
+    font-size: 9rem;
+}
+.featured-title{
+    text-align: center;
+}
+/*
+=====================
+About
+=====================
+*/
+.about-page h2{
+    text-transform: none;
+    font-weight: bold;
+}
+.about-page{
+    display: grid;
+    gap: 2rem 4rem;
+    padding-bottom: 3rem;
+}
+.about-img{
+    border-radius: var(--border-radius);
+    /* height: 300px; */
+}
+@media screen and (min-width: 992px) {
+    .about-page{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px;
+        align-items: center;
+    }
+    /* .about-img{
+        height: 100%;
+    } */
+}
+
+/*
+=====================
+Contact-page
+=====================
+*/
+
+.contact-form{
+    width: 100%;
+    margin: 0;
+}
+.contact-container{
+    display: grid;
+    gap: 2rem 3rem;
+    padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 999px) {
+    .contact-container{
+        grid-template-columns: 1fr 450px;
+        align-items: center;
+
+    }
+}
+/* Form */
+.form {
+  /* width: 70vw; */
+  max-width: var(--fixed-width);
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+}
+.form-label {
+  display: block;
+  font-size: var(--smallText);
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--borderRadius);
+  background: var(--backgroundColor);
+  border: 1px solid black;
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.form-textarea {
+  height: 7rem;
+}
+::placeholder {
+  font-family: inherit;
+  color: pink;
+}
+.form-alert {
+  color: var(--red-dark);
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+}
